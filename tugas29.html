@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas CSS - Niomic</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(228, 226, 226);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image {
+            text-align: center;
+            margin-top: 10rem;
+            margin-right: 16rem;
+            margin-bottom: -3rem;
+        }
+
+        .image h2 {
+            color: rgb(11, 200, 191);
+            position: relative;
+            top: -5rem;
+            left: 11rem;
+        }
+
+        .form {
+            background: #fffffffa;
+            width: 25%;
+            height: 39%;
+            padding: 5px 5px;
+        }
+
+        .form .field {
+            width: 435%;
+            position: relative;
+        }
+
+        .form .button {
+            width: 435%;
+            color: #fff;
+        }
+
+        .field i img {
+            width: 5%;
+            margin-top: 8px;
+            margin-left: 5px;
+            position: absolute;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="img/logo1.jpg" alt="logo" height="50px" width="50px">
+        <h2>Daftar Akun NIOMIC</h2>
+    </div>
+    <div class="form">
+        <form action="" class="ui form">
+            <div class="field ui left icon input">
+                <input type="text" placeholder="Nama Depan">
+                <i class="user icon"></i>
+            </div>
+            <div class="field ui left icon input">
+                <i class="user icon"></i>
+                <input placeholder="Nama Belakang" type="text">
+            </div>
+            <div class="field ui left icon input">
+                <i class="user icon"></i>
+                <input placeholder="No Telp/HP" type="text">
+            </div>
+            <div class="field ui left icon input">
+                <i class="user icon"></i>
+                <input placeholder="Alamat Email" type="email">
+            </div>
+            <div class="field ui left icon input">
+                <i class="lock icon"></i>
+                <input placeholder="Password" type="password">
+            </div>
+            <div class="button">
+                <button type="button" class="fluid ui teal button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic.min.js"></script>
+</body>
+
+</html>
